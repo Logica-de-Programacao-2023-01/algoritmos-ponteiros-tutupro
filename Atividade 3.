@@ -1,0 +1,18 @@
+package main
+
+// Escreva uma função em Go que receba um ponteiro
+//para uma string e atualize o valor da string para seu reverso.
+
+func x(y *string) string {
+	runes := []rune(*y)
+
+	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
+
+		runes[i], runes[j] = runes[j], runes[i]
+	}
+	return string(runes)
+}
+
+func main() {
+
+}
