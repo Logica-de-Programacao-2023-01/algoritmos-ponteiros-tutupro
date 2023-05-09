@@ -1,0 +1,18 @@
+package main
+
+// Escreva uma função que receba um ponteiro para um inteiro
+//e verifique se esse inteiro é par ou ímpar. A função deve
+//atualizar o valor do inteiro para 0 se ele for par ou para 1 se for ímpar.
+
+func x(y *int) int {
+	if *y%2 == 0 {
+		*y = 0
+	} else {
+		*y = 1
+	}
+	return 0
+}
+
+func main() {
+
+}
