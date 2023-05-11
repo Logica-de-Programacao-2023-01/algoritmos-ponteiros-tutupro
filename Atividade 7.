@@ -1,0 +1,29 @@
+package main
+
+import (
+	"fmt"
+)
+
+// Escreva uma função em Go que receba um ponteiro
+// para um struct Conta com campos saldo e titular, 
+// e adicione um valor ao saldo da conta.
+
+type Conta struct {
+	Titular string
+	Saldo  float64
+}
+
+func num(pon *Conta, n float64) float64 {
+
+	var Valor float64
+	
+	fmt.Print("Digite o valor da conta")
+	fmt.Scan(&Valor)
+
+   Conta.Saldo = Valor
+
+	return Valor
+}
+func main() {
+	
+}
