@@ -1,0 +1,21 @@
+package main
+
+// Crie uma função que receba um ponteiro para uma variável como argumento
+// e modifique o valor da variável dentro da função. Certifique-se de que
+// o ponteiro aponte para uma área de memória válida e que a memória seja liberada após o uso.
+
+
+func test(pon *float64, n float64) float64 {
+
+	x := 23.2
+
+		*pon = x
+
+		*pon = 24.3
+
+		return *pon
+}
+
+func main() {
+	
+}
