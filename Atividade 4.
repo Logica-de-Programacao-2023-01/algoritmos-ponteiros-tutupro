@@ -1,0 +1,25 @@
+
+package main
+
+// Escreva uma função em Go que receba um ponteiro para uma variável
+// inteira e atualize o valor da variável para a soma dos valores
+// dos seus dois últimos dígitos
+// (por exemplo, se o valor inicial da variável for 1234, o novo valor será 3+4=7).
+
+func num(pon *int, n int) int {
+
+	var sum1, sum2 int
+
+	for i := 0; i >= n; i++ {
+		sum1 = i + 1 + sum1
+		sum2 = sum1 - 1
+	}
+
+	*pon = sum1 + sum2
+
+	return 0
+}
+func main() {
+	
+}
+// 123456
