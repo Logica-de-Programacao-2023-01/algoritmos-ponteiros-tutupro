@@ -2,10 +2,9 @@ package main
 
 import "math"
 
-// Escreva uma função em Go que receba um ponteiro para uma variável
-// inteira e atualize o valor da variável para a soma dos valores
-// dos seus dois últimos dígitos
-// (por exemplo, se o valor inicial da variável for 1234, o novo valor será 3+4=7).
+// Escreva uma função em Go que receba um ponteiro
+// para uma variável float64 e atualize o valor da variável para a média
+// aritmética entre o seu valor atual e o valor da constante Pi.
 
 func num(pon *float64, n float64) float64 {
 
